@@ -14,7 +14,13 @@ interface RetriableConfig extends InternalAxiosRequestConfig {
   _skipAuthRefresh?: boolean;
 }
 
-const baseURL = import.meta.env.VITE_API_BASE_URL || '/api';
+function resolveApiBaseUrl(): string {
+  const origin = import.meta.env.VITE_API_URL?.trim().replace(/\/$/, '');
+  if (origin) return `${origin}/api`;
+  return '/api';
+}
+
+const baseURL = resolveApiBaseUrl();
 
 export const api = axios.create({
   baseURL,
