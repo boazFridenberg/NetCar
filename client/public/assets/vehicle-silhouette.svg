@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Vehicle image unavailable">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F5F1"/>
+      <stop offset="100%" stop-color="#E6E1D8"/>
+    </linearGradient>
+    <linearGradient id="car" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D8D2C8"/>
+      <stop offset="100%" stop-color="#B8B0A3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g transform="translate(110 150)" fill="url(#car)">
+    <path d="M40 150
+             C30 150 20 140 20 128
+             L20 110
+             C20 96 30 88 44 86
+             L120 78
+             C150 46 196 28 248 28
+             L360 28
+             C420 28 470 50 512 92
+             L560 100
+             C586 104 600 120 600 142
+             L600 128
+             C600 142 590 150 578 150
+             L520 150
+             A44 44 0 0 0 432 150
+             L208 150
+             A44 44 0 0 0 120 150
+             Z"/>
+    <path d="M250 50 L350 50 C392 50 430 64 462 90 L250 90 Z" fill="#E6E1D8"/>
+    <path d="M150 50 L235 50 L235 90 L120 90 C128 70 138 58 150 50 Z" fill="#E6E1D8"/>
+  </g>
+  <circle cx="274" cy="300" r="40" fill="#334155"/>
+  <circle cx="274" cy="300" r="18" fill="#94a3b8"/>
+  <circle cx="566" cy="300" r="40" fill="#334155"/>
+  <circle cx="566" cy="300" r="18" fill="#94a3b8"/>
+  <text x="400" y="400" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="22" fill="#64748b" font-weight="600" letter-spacing="0.08em">NETCAR</text>
+</svg>
